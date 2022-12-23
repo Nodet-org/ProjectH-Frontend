@@ -3,6 +3,9 @@
 
 npx commitlint --edit ||
 (
-        echo "😤 Ooopsie! That's not a good commit message to have."
+        echo "😤Ooopsie! That's not a good commit message to have."
         false; 
 )
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'

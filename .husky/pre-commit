@@ -50,5 +50,4 @@ echo '🤔 Alright... The code looks good to me, let me just check your commit m
 #     false;
 # )
 
-# If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
+
