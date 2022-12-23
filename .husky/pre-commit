@@ -33,7 +33,14 @@ yarn check-lint ||
 # )
 
 # If everything passes... Now we can commit
-echo '🤔 Alright... The code looks good to me, trying to build now.'
+echo '🤔 Alright... The code looks good to me, let me just check your commit message.'
+
+# Check commint message
+npx commitlint --edit $1 ||
+(
+        echo "😤 Ooopsie! That's not a good commit message to have. Checkout: https://commitlint.js.org/#/concepts-commit-conventions?id=multiple-scopes."
+        false; 
+)
 
 # yarn build ||
 # (
