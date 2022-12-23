@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+    "check-types": "yarn  tsc --pretty --noEmit",
+    "check-format": "yarn  prettier --check .",
+    "check-lint": "yarn  eslint . --ext ts --ext tsx --ext js",
+    "format": "yarn  prettier --write ."
   },
   "dependencies": {
     "@next/font": "13.1.0",
@@ -22,7 +27,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.0",
     "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
     "tailwindcss": "^3.2.4"
   }
 }
