@@ -7,7 +7,7 @@ echo '🏗️👷 Styling, testing and building your project before committing'
 yarn check-format ||
 (
     echo '🤢🤮 Prettier Check Failed. Run yarn format, add changes and try commit again.';
-    yarn format
+    yarn format && git add .
 )
 
 # Check ESLint Standards
